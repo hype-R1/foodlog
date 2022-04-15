@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+span.new-entry {
+    color: #fff;
+}
+
+div.card-content {
+    border-bottom: 2px solid black;
+}
+/* card boby style */
+
+ p.time{
+    border: 1px solid coral;
+    border-radius: 5px;
+    text-align: center;
+    background-color: lightblue;
+    font-size: 14px;
+    font-style: italic;
+    
+
+}
+/* for the added at time on bottom of card */
+p.grey{
+    background-color: lightgray
+}
+/*alternating lins color  */
+
+header.card-header{
+
+    background: dodgerblue;
+    text-align: center;
+    text-decoration: wavy;
+}
+/* header of the card st */
+p.card-title{
+    text-align: center;
+}
+/* input inthe haerder of card  */
+
+
+div.card-content-body{
+    border: 1px solid black
+}
+/* boby of the entries card  */

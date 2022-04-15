@@ -1,27 +1,45 @@
-<div id="<%= dom_id entry %>">
-  <p>
-    <strong>Meal type:</strong>
-    <%= entry.meal_type %>
-  </p>
+<div class "entry-card" id="<%= dom_id entry %>" >
+  
+    <header class="card-header" >
+      <p class="card-header-title is-centered"><%= entry.meal_type %>
+      
+    </header>
+  
+  <div class="card-content-body">
+    <p><span>
+      <strong>Description:</strong>
+      <%= entry.description %>
+      </span>
+    </p>
 
-  <p>
-    <strong>Calories:</strong>
-    <%= entry.calories %>
-  </p>
+    <p class="grey"><span>
+      <strong>Calories:</strong>
+      <%= entry.calories %>
+      </span>
+    </p>
 
-  <p>
-    <strong>Proteins:</strong>
-    <%= entry.proteins %>
-  </p>
+    <p><span>
+      <strong>Carbohydrates:</strong>
+      <%= entry.carbohydrates %>
+      </span>
+    </p>
 
-  <p>
-    <strong>Carbohydrates:</strong>
-    <%= entry.carbohydrates %>
-  </p>
+    <p class="grey"><span>
+      <strong>Protein:</strong>
+      <%= entry.protein %>
+      </span>
+    </p>
 
-  <p>
-    <strong>Fats:</strong>
-    <%= entry.fats %>
-  </p>
+    <p><span>
+      <strong>Fats:</strong>
+      <%= entry.fats %>
+      </span>
+    </p>
+  </div>
+  <p class="time">Logged <%= time_ago_in_words(entry.created_at) %> ago</p>
 
 </div>
+
+
+
+<%# workign on the archives link  %>
